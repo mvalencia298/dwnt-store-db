@@ -94,14 +94,15 @@ ENGINE = InnoDB;
 -- Table `mydb`.`DETALLE_ALQUILER`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `mydb`.`DETALLE_ALQUILER` (
-  `nro_alquiler` INT NOT NULL AUTO_INCREMENT,
+  `detalle_alquiler_id` INT NOT NULL AUTO_INCREMENT,
+  `nro_alquiler` INT NOT NULL,
   `item` VARCHAR(45) NOT NULL,
   `codigo_titulo` INT NOT NULL,
   `nro_CD` INT NOT NULL,
   `dias_prestamo` INT NOT NULL,
   `fecha_devolucion` DATE NOT NULL,
-  PRIMARY KEY (`nro_alquiler`),
   INDEX `FK_DETALLE_ALQUILER_NRO_CD_idx` (`codigo_titulo` ASC) VISIBLE,
+  PRIMARY KEY (`detalle_alquiler_id`),
   CONSTRAINT `FK_DETALLE_ALQUILETR_NRO_ALQUILER`
     FOREIGN KEY (`nro_alquiler`)
     REFERENCES `mydb`.`ALQUILER` (`nro_alquiler`)
