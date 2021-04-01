@@ -4,6 +4,6 @@ Projecto que contiene los archivos SQL y PNG con la información del modelo de d
 
 ## Colaboradores
 
-1. Jenifer Elizabeth Gonzales Tejada
+1. Jenifer Elizabeth Gonzalez Tejada
 2. Yeisson Daniel Quiceno Gomez
 3. Mauricio Valencia Cosme
